@@ -1,17 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 import './index.css';
-//import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const X = () => <p>Hola mundo</p>;
+
+const Li = ({children,estado,casa,edad})=> {
+  console.log(casa,edad)
+return(
+<li>{children} está {estado}</li>
+)
+}
+*/
+/*
+const X = () =>
+ <ul>
+   <Li 
+      estado = {"feliz"}  casa = {false}  edad = {21} >Felipe </Li>
+   <Li estado ={"a verga"}>Pedro</Li>
+    <Li estado= {"Bobo"}>Pablo</Li>
+  </ul>
 
   root.render(
   <X/>,document.getElementById("root")
 );
-
+*/
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
 
   <React.StrictMode>
