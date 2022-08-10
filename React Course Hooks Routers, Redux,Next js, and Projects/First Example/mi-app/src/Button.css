@@ -1,0 +1,16 @@
+.btn{
+    transition: all 0.3s ease-in-out;
+    background-color: brown;
+    color: aliceblue;
+    border:none;
+    padding: 15px 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+
+.btn:hover{
+    background-color: #750;
+}

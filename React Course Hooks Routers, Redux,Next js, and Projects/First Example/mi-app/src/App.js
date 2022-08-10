@@ -1,39 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-//const app =()=>{}
-//CREAR UN COMPONENTE EL CUAL SEAN 4 CAJAS CADA UNA DE DIFERENTE COLOR
-//PERO UTILIZANDO LAS MISMAS PROPIEDADES
-const estilo =(bg = '#222') =>({
-  backgroundColor: bg,
-  color:'#000',
-  padding:'10px 15px',
-  margin:'10px 15px',
-  width:'250px',
-  height:'250px'
-})
+import React from 'react'
+import Button from './btn'
+const arr = [
+    'chanchito feliz',
+    'chanchito emocionado',
+    'chanchito triste',
 
-const Li = ({children}) =>{
-  return(
-  <li style = {{...estilo({bg:'#000'})}}
-  className= 'clase-li'>{children}</li>
-  )
-}
-function App() {
-  const valor = 'triste'
-  return (
-   
-     <ul style = {estilo('#750')} className = 'clase-css'>
-      <Li  estado = 'feliz'>Valor</Li>
-      <Li  estado = 'feliz'>Valor</Li>
-      <Li  estado = 'feliz'>Valor</Li>
-      <Li  estado = 'feliz'>Valor</Li>
-      </ul>
-      
-      
-  );
-    
- 
+]
+const App = ()=>{
+    const miVariable = false
+    if (miVariable) {
+        return <p>Mi variable dio true</p>
+    }
+    return(
+    <div>
+        <h1 onClick={(e) => console.log('click',e)}>Hola Mundo</h1>
+        {arr.map(el => <p key={el}>{el}</p>)}
+        <Button onClick={() => console.log('clickeado')}></Button>
+        
+    </div>
+    )
 
 }
 
-export default App;
+export default App
