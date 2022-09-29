@@ -17,7 +17,8 @@ return(
   </tr>
 );
 }
-function App() {
+function Problema1() {
+//Creacion de la funcion que borra en la ultima fila
 function eliminarUltimafila(){
   if (articulos.length) {
     const temporal = Array.from(articulos);
@@ -25,6 +26,16 @@ function eliminarUltimafila(){
     setArticulos(temporal);
   }
 }
+
+//Creacion de la funcion crear boton bananas xd
+function agregarUltimafila(){
+if (articulos.length) {
+  const temporal = Array.from(articulos);
+  temporal.push({codigo:4,descripcion:'bananas',precio:45});
+  setArticulos(temporal);
+}
+}
+//Hook useState
  const [articulos,setArticulos]=useState([
   {
     codigo:1,
@@ -35,7 +46,7 @@ function eliminarUltimafila(){
     descripcion:'naranjas',
     precio:21
   }, {
-    codigo:1,
+    codigo:3,
     descripcion:'peras',
     precio:18.20
   }
@@ -52,9 +63,10 @@ function eliminarUltimafila(){
         </thead>
         <tbody>{articulos.map(generarfila)}</tbody>
       </table>
-      <button onClick={eliminarUltimafila}>Eliminar la ultima fila</button>
+      <button onClick={agregarUltimafila}>Agregar</button>
+      <button onClick={eliminarUltimafila}>Eliminar</button>
     </div>
   );
 }
 
-export default App;
+export default Problema1;
