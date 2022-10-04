@@ -24,11 +24,11 @@ function App() {
 
   return (
    <div>
-    <p>Dados</p>
+    <p>Dice</p>
    <Dado valor = {numero1} />
    <Dado valor = {numero2} />
    <Dado valor = {numero3} />
-    <button onClick={tirar}>Tirar</button>
+    <button onClick={tirar}>Throw</button>
    
    </div>
   );

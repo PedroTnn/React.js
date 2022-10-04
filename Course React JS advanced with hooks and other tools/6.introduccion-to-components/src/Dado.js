@@ -1,18 +1,17 @@
 import './Dado.css'
-import React,{useState} from 'react'
+import React from 'react'
 
 
 
 
 function Dado(propiedades){
   
-    const valor = Math.trunc(Math.random()*6)+1; 
 
    
 
     return(
         <div className='dado-cuadrado'>
-            {propiedades= valor}
+            {propiedades.valor}
         </div>
     )
 
