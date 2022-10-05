@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './App.css';
 import ListadoResultado from './listadoresultado';
-
+import FormularioNumeros from './Formulario.js'
 function App() {
 const [operation,setOperation] = useState([])
 
@@ -26,7 +26,7 @@ event.target.valor2.value = '';
 
   return (
       <div>
-     
+      <FormularioNumeros OnSumar={sumar} />
        <ListadoResultado  resultado =  {operation}/>
       </div>
   );

@@ -1,7 +1,7 @@
-function formularioNumeros(propiedades) {
+function FormularioNumeros(propiedades) {
     return(
-        <form onSubmit={propiedades.onSumar}>
-    <p>
+        <form onSubmit={propiedades.OnSumar}>
+        <p>
         Ingrese primer valor 
         <input type="number" name="valor1"></input>
       </p>
@@ -10,9 +10,8 @@ function formularioNumeros(propiedades) {
         <input type="number" name="valor2"></input>
       </p>
       <input type="submit" value="Sumar"></input>
-            
         </form>
-    )
+    );
 }
 
-export default formularioNumeros;
+export default FormularioNumeros;
