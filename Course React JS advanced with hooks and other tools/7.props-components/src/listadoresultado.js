@@ -1,3 +1,6 @@
+
+
+
 function ListadoResultado(propiedades) {
     return(
         <ul>
